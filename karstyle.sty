@@ -1,0 +1,100 @@
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{answers}
+\usepackage{asymptote}
+\usepackage{circuitikz}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{karnaugh-map}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{parskip}
+\usepackage{subcaption}
+\usepackage{thmtools}
+\usepackage[obeyFinal,textsize=scriptsize,shadow]{todonotes}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{xstring}
+
+\usepackage{subfiles}
+
+
+% Reducing default margin
+\geometry{a4paper, margin=0.75in}
+
+% Image files stored in "images" folder
+\graphicspath{ {./images/} }
+
+% Changing to Module
+\renewcommand{\chaptername}{Module}
+
+% For note taking purposes.
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{question}{Question}[chapter]
+\newtheorem{solution}{Solution}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% Code block styling
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96, 0.97, 0.98}
+
+\lstdefinestyle{code-light}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=code-light}
+
+% Circuitikz set
+\ctikzset{logic ports=ieee}
+
+% Removing hyperlink box border
+\hypersetup{
+    pdfborder = {0 0 0}
+}
+
+% Setting table of content depth to just sections.
+\setcounter{tocdepth}{1}
+
+% Cover page
+\def \TITLE {}
+\def \SUBTITLE {}
+\def \AUTHOR {}
+\def \SUBAUTHOR {}

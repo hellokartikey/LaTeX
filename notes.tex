@@ -1,0 +1,33 @@
+\documentclass[a4paper, oneside, twocolumn]{book}
+
+% Start importing packages before importing the style
+\usepackage{karstyle}
+
+% Generating cover page
+\newcommand \titlefont {\fontsize{40pt}{48pt}\selectfont}
+\newcommand \authorfont {\fontsize{15pt}{18pt}\selectfont}
+
+\title{\titlefont \textbf{\textit{\TITLE}}}
+\author{\authorfont \AUTHOR}
+\date{}
+
+% Cover page
+\def \TITLE {Course Title}
+\def \SUBTITLE {}
+\def \AUTHOR {Kartikey Subramanium}
+\def \SUBAUTHOR {}
+
+\begin{document}
+\pagenumbering{roman}
+\maketitle
+
+% Start importing preamble subfiles using
+% \subfile{file}
+
+\tableofcontents
+\pagenumbering{arabic}
+
+% Start importing subfiles using
+% \subfile{file}
+
+\end{document}
