@@ -4,20 +4,20 @@
 \usepackage{karstyle}
 
 % Generating cover page
-\newcommand \titlefont {\fontsize{40pt}{48pt}\selectfont}
-\newcommand \subtitlefont {\fontsize{28pt}{24pt}\selectfont}
-\newcommand \authorfont {\fontsize{15pt}{18pt}\selectfont}
-\newcommand \subauthorfont {\fontsize{12pt}{8pt}\selectfont}
+\newcommand \titlefont {\fontsize{48pt}{40pt}\selectfont}
+\newcommand \subtitlefont {\fontsize{22pt}{20pt}\selectfont}
+\newcommand \authorfont {\fontsize{18pt}{16pt}\selectfont}
+\newcommand \subauthorfont {\fontsize{16pt}{14pt}\selectfont}
 
 \title{\titlefont \textbf{\textit{\TITLE}} \\[1ex] \subtitlefont \SUBTITLE}
-\author{\authorfont \AUTHOR \\[1ex] \subauthorfont \SUBAUTHOR}
+\author{\authorfont \AUTHOR \\[1ex] \subauthorfont \texttt{\SUBAUTHOR}}
 \date{}
 
 % Cover page
 \def \TITLE {Course Title}
 \def \SUBTITLE {Sub Title}
 \def \AUTHOR {Kartikey Subramanium}
-\def \SUBAUTHOR {Sub Author}
+\def \SUBAUTHOR {email@example.com}
 
 % Changing to Module
 \renewcommand{\chaptername}{Module}
