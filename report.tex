@@ -1,21 +1,28 @@
-\documentclass[a4paper, oneside]{report}
+\documentclass[]{article}
 
 % Start importing packages before importing the style
 \usepackage{karstyle}
 
-\title{\TITLE}
-\author{\AUTHOR}
+% Generating cover page
+\newcommand \titlefont {\fontsize{16pt}{12pt}\selectfont}
+\newcommand \subtitlefont {\fontsize{12pt}{10pt}\selectfont}
+\newcommand \authorfont {\fontsize{12pt}{10pt}\selectfont}
+\newcommand \subauthorfont {\fontsize{12pt}{10pt}\selectfont}
+
+\title{\titlefont \textbf{\TITLE} \\[1ex] \subtitlefont \SUBTITLE }
+\author{\authorfont \AUTHOR \\[1ex] \subauthorfont \texttt{\SUBAUTHOR}}
+% \date{}
 
 % Cover page
 \def \TITLE {Course Title}
-\def \SUBTITLE {}
+\def \SUBTITLE {Sub Title}
 \def \AUTHOR {Kartikey Subramanium}
-\def \SUBAUTHOR {}
-
-\begin{document}
-\maketitle
+\def \SUBAUTHOR {email@example.com}
 
 % Start importing subfiles using
 % \subfile{file}
+
+\begin{document}
+\maketitle
 
 \end{document}

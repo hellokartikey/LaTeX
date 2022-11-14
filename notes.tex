@@ -5,29 +5,48 @@
 
 % Generating cover page
 \newcommand \titlefont {\fontsize{40pt}{48pt}\selectfont}
+\newcommand \subtitlefont {\fontsize{28pt}{24pt}\selectfont}
 \newcommand \authorfont {\fontsize{15pt}{18pt}\selectfont}
+\newcommand \subauthorfont {\fontsize{12pt}{8pt}\selectfont}
 
-\title{\titlefont \textbf{\textit{\TITLE}}}
-\author{\authorfont \AUTHOR}
+\title{\titlefont \textbf{\textit{\TITLE}} \\[1ex] \subtitlefont \SUBTITLE}
+\author{\authorfont \AUTHOR \\[1ex] \subauthorfont \SUBAUTHOR}
 \date{}
 
 % Cover page
 \def \TITLE {Course Title}
-\def \SUBTITLE {}
+\def \SUBTITLE {Sub Title}
 \def \AUTHOR {Kartikey Subramanium}
-\def \SUBAUTHOR {}
+\def \SUBAUTHOR {Sub Author}
+
+% Changing to Module
+\renewcommand{\chaptername}{Module}
+
+% For note taking purposes.
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{question}{Question}[chapter]
+\newtheorem{solution}{Solution}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% Start importing subfiles using
+% \subfile{file}
 
 \begin{document}
 \pagenumbering{roman}
 \maketitle
 
 % Start importing preamble subfiles using
-% \subfile{file}
 
 \tableofcontents
 \pagenumbering{arabic}
 
-% Start importing subfiles using
-% \subfile{file}
+% Start your book
 
 \end{document}
