@@ -4,13 +4,13 @@
 \usepackage{karstyle}
 
 % Generating cover page
-\newcommand \titlefont {\fontsize{48pt}{40pt}\selectfont}
-\newcommand \subtitlefont {\fontsize{22pt}{20pt}\selectfont}
-\newcommand \authorfont {\fontsize{18pt}{16pt}\selectfont}
-\newcommand \subauthorfont {\fontsize{16pt}{14pt}\selectfont}
+\newcommand \titlefont {\fontsize{40pt}{38pt}\selectfont}
+\newcommand \subtitlefont {\fontsize{14pt}{12pt}\selectfont}
+\newcommand \authorfont {\fontsize{14pt}{12pt}\selectfont}
+\newcommand \subauthorfont {\fontsize{12pt}{8pt}\selectfont}
 
-\title{\titlefont \textbf{\textit{\TITLE}} \\[1ex] \subtitlefont \SUBTITLE}
-\author{\authorfont \AUTHOR \\[1ex] \subauthorfont \texttt{\SUBAUTHOR}}
+\title{\titlefont \textbf{\TITLE} \\[0.5ex] \subtitlefont \SUBTITLE}
+\author{\authorfont \AUTHOR \\[0.5ex] \subauthorfont \texttt{\SUBAUTHOR}}
 \date{}
 
 % Cover page
@@ -23,12 +23,14 @@
 \renewcommand{\chaptername}{Module}
 
 % For note taking purposes.
-\theoremstyle{definition}
+\theoremstyle{theorem}
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+
+\theoremstyle{definition}
 \newtheorem{definition}{Definition}[chapter]
 \newtheorem{example}{Example}[chapter]
-\newtheorem{lemma}{Lemma}[theorem]
 \newtheorem{question}{Question}[chapter]
 \newtheorem{solution}{Solution}
 
