@@ -1,12 +1,12 @@
-\documentclass[]{report}
+\documentclass[oneside, twocolumn]{book}
 
 % Start importing packages before importing the style
 \usepackage{karstyle}
 
 % Title text
-\title{\Large \textbf{\TITLE} \\[1ex] \large \SUBTITLE }
-\author{\AUTHOR \\[1ex] \texttt{\SUBAUTHOR}}
-% \date{}
+\title{\Huge \textbf{\TITLE} \\[0.5ex] \huge \SUBTITLE}
+\author{\Large \AUTHOR \\[0.5ex] \large \texttt{\SUBAUTHOR}}
+\date{}
 
 % Cover page
 \def \TITLE {Course Title}
@@ -19,6 +19,9 @@
 
 \begin{document}
 \maketitle
-% Start your report
+% Start importing preamble subfiles using
+
+\tableofcontents
+% Start your book
 
 \end{document}

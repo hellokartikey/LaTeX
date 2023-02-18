@@ -9,7 +9,6 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{float}
-\usepackage{flushend}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
 \usepackage{graphicx}
@@ -36,7 +35,7 @@
 
 
 % Reducing default margin
-\geometry{a4paper, margin=0.75in}
+%\geometry{a4paper, margin=0.75in}
 
 % Image files stored in "images" folder
 \graphicspath{ {./images/} }
@@ -62,7 +61,8 @@
     showspaces=false,
     showstringspaces=false,
     showtabs=false,
-    tabsize=2
+    tabsize=2,
+	frame=single
 }
 
 \lstset{style=code-light}
@@ -76,7 +76,22 @@
 }
 
 % Setting table of content depth to just sections.
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
+
+% For note taking purposes.
+\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+\newtheorem*{solution}{Solution}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
 
 % Cover page
 \def \TITLE {}
